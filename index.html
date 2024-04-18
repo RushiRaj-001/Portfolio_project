@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/2c16a6d300.js" crossorigin="anonymous"></script>
+  <title>Potfolio</title>
+</head>
+
+<body>
+  <section id="header">
+    <div class="container">
+      <nav>
+        <div class="name">
+          <p><span>R</span>ushi.</p>
+        </div>
+        <div>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact-us</a></li>
+            <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" onclick="closemenu()">
+              <path
+                d="M9.33745 28.2367L7.76245 26.6617L16.4249 17.9992L7.76245 9.33672L9.33745 7.76172L17.9999 16.4242L26.6624 7.76172L28.2374 9.33672L19.5749 17.9992L28.2374 26.6617L26.6624 28.2367L17.9999 19.5742L9.33745 28.2367Z"
+                fill="#F7F7F7" />
+            </svg>
+          </ul>
+          <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" onclick="openmenu()">
+            <path d="M4.5 27V24.75H31.5V27H4.5ZM4.5 19.125V16.875H31.5V19.125H4.5ZM4.5 11.25V9H31.5V11.25H4.5Z"
+              fill="#F7F7F7" />
+          </svg>
+        </div>
+      </nav>
+      <div class="header-text">
+        <p>Full Stack Web Devloper</p>
+        <h1>Hello, I'm <span>Rushikesh</span> Rajapure</h1>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="./assets/self.jpg" alt="" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            Hello, I'm Rushikesh Rajapure, a dynamic third-year computer engineering student with a fervor for web
+            development. In the ever-evolving realm of technology, I find my true calling in crafting immersive and
+            user-friendly digital experiences. My journey in computer engineering has equipped me with a robust set of
+            skills, and my passion for web development fuels my desire to create innovative solutions. Join me as I
+            navigate the exciting intersection of code and creativity on this digital adventure!
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-links" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('project')">
+              Project
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contain active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Devloper</span><br />
+                Web Devlopment
+              </li>
+              <li><span>UI Designer</span><br />Web UI interface Design</li>
+              <li><span>Programing</span><br />Core language coding</li>
+            </ul>
+          </div>
+          <div class="tab-contain" id="project">
+            <ul>
+              <li>
+                <span>HTML and CSS</span><br />
+                A fruit selling website
+              </li>
+              <li><span>Tailwind</span><br />Nike Shoes Website</li>
+              <li><span>HTMl CSS and JS</span><br />Number Hit Game</li>
+            </ul>
+          </div>
+          <div class="tab-contain" id="education">
+            <ul>
+              <li>
+                <span>2021 (BE Computer Engg.)</span><br />Matoshri College Of
+                Engg. Nashik.
+              </li>
+              <li>
+                <span>2019 - 2021 (11th and 12th Science)</span><br />
+                Aarambh Mahavidyalya Nashik.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Website Devlopment</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
+            ducimus nobis vel qui tenetur? Aut, commodi, aliquid, eos
+            excepturi iste consequatur et quos praesentium non tenetur sed.
+            Laboriosam, dolore similique.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>Web-Design</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
+            ducimus nobis vel qui tenetur? Aut, commodi, aliquid, eos
+            excepturi iste consequatur et quos praesentium non tenetur sed.
+            Laboriosam, dolore similique.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-pen-ruler"></i>
+          <h2>UI-Design</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
+            ducimus nobis vel qui tenetur? Aut, commodi, aliquid, eos
+            excepturi iste consequatur et quos praesentium non tenetur sed.
+            Laboriosam, dolore similique.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="./assets/work-1.png" alt="" />
+          <div class="layer">
+            <h3>Number Hit Game</h3>
+            <p>
+              In this project, I have built a fully responsive website. A random number is located, and the player aims
+              to hit the corresponding number within the bubbles. Each successful bubble hit increases the score by
+              10.The game has a time limit of 60 seconds, and after this duration, the game concludes, displaying the
+              final score.
+            </p>
+            <a href="https://rushiraj-001.github.io/Number-hit-game/" target="_blank"><svg
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V32c0-17.7-14.3-32-32-32H352zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z" />
+              </svg></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="./assets/work-2.png" alt="" />
+          <div class="layer">
+            <h3>Gym Website</h3>
+            <p>
+              I design a full responsive Gym-website as a my college project,In this website on login page , services
+              and a contact page.
+            </p>
+            <a href="https://rushiraj-001.github.io/Gym-Website-/" target="_blank"><svg
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V32c0-17.7-14.3-32-32-32H352zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z" />
+              </svg></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./assets/work-1.png" alt="" />
+          <div class="layer">
+            <h3>Number Hit Game</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              explicabo, corrupti quo nesciunt alias mollitia? Excepturi nobis
+              sit officiis quam.
+            </p>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V32c0-17.7-14.3-32-32-32H352zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z" />
+              </svg></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h1 class="sub-title">Contact-us</h1>
+      <div class="row">
+        <div class="contact-1">
+          <p>
+            <i class="fa-regular fa-paper-plane"></i>rushirajapure111@gmail.com
+          </p>
+          <p><i class="fa-solid fa-phone"></i>+91 8080466258</p>
+
+          <div class="social-links">
+            <a href="https://www.facebook.com/rushikesh.rajapure.54/" target="_blank"><i
+                class="fa-brands fa-facebook"></i></a>
+            <a href="https://github.com/RushiRaj-001" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/rushikesh-rajapure-9b411b1ba/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/_rushi.rajapure_/?fbclid=IwAR2wQ7CPllA0meF2tIokBbSbt0rq9HnQ7Vq4uiKFxjmGWQJGAcn-Zh2EW5k"
+              target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+
+          <div class="resume">
+            <a href="./assets/my_resume.pdf" class="btn btn2">Download CV</a>
+          </div>
+        </div>
+        <div class="contact-2">
+          <form name="submit-to-google-sheet" method="post">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2" id="btn3">Submit</button>
+          </form>
+
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer">
+    <p>Copyright ©2023 💜Rushi Rajapure</p>
+  </section>
+</body>
+
+<script src="./script.js"></script>
+<script>
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbys8J9sEgPGGUu4NftdJL4bdyi8Jfkz2InYmhopHDR55I7Y7Bwff7ReeHFEoZrBG1Cj/exec";
+  const form = document.forms["submit-to-google-sheet"];
+  const msg = document.getElementById("msg");
+  const btn = document.getElementsByClassName("btn2")[0]; // Access the first element in the collection
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => {
+        msg.innerHTML = "Message sent successfully";
+        btn.style.backgroundColor = "green";
+        btn.style.boxShadow = "0px 0px 6px green";
+        setTimeout(function () {
+          msg.innerHTML = "";
+          btn.style.backgroundColor = "";
+          btn.style.boxShadow = "";
+        }, 5000);
+      })
+      .catch((error) => {
+        msg.innerHTML = "Failed to send message";
+      });
+  });
+</script>
+
+</html>
